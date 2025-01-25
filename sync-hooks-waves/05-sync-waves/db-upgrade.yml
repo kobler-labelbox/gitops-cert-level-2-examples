@@ -5,6 +5,7 @@ metadata:
   name: my-db-upgrade
   annotations:
     argocd.argoproj.io/sync-wave: "-20" 
+    argocd.argoproj.io/hook: PreSync
 spec:
   template:
     spec:
